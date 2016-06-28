@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>唯品会</title>
+        <link rel="shortcut icon" href=" favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/commun.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+           $(function(){
+               show_time();  //倒计时
+               vip_electricity.into();   //ajax
+           });
+        </script>
+    </head>
+    <body>
+         <!-- 头部导航 -->
+         <header class="header vip-common-header">
+             <nav class="top-nav">
+                 <div class="head-inner">
+                     <!-- 选择地区 -->
+                     <div class="sel-area">
+                         <div class="sel-area-change selected">
+                             <div class="sel-area-btn">
+                                 <span class="fl">广东</span>
+                                 <i class="ico-dis"></i>
+                             </div>
+                             <div class="sel-area-box"></div>
+                         </div>
+                     </div>
+                     <ul class="top-nav-tool f-top-login-after">
+                        <li>
+                            <ul>
+                                <li class="wp-user">
+                                    <span class="user-in">
+                                        <a href="#">
+                                            <i class="uv-1"></i>
+                                        </a>
+                                        <a href="#">相知相伴</a>
+                                        <i class="ico-dis"></i>
+                                    </span>
+                                    <div class="top-nav-dis user-infor user-login-ed"></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="wp-order">
+                            <span class="order-in">
+                                <a href="#">我的订单</a>
+                                <i class="ico-dis"></i>
+                            </span>
+                            <p></p>
+                        </li>
+                        <li class="wp-service wp-fav-nav">
+                            <span class="service-in">
+                                <a href="#">我的收藏夹</a>
+                                <i class="ico-dis"></i>
+                            </span>|
+                            <p></p>
+                        </li>
+                        <li class="wp-card">
+                            <a href="#">唯品卡</a>
+                        </li>
+                        <li class="wp-card">
+                            <a href="#">支付专区</a>
+                        </li>
+                        <li class="wp-ncard">
+                            <a href="#">联名卡申请</a>
+                        </li>
+                        <li class="wp-service wp-member">
+                            <span class="service-in">
+                                <a href="#">会员俱乐部</a>
+                                <i class="ico-dis"></i>
+                            </span>
+                        </li>
+                        <li class="wp-service">
+                            <span class="service-in">
+                                <a href="#">客户服务</a>
+                                <i class="ico-dis"></i>
+                            </span>
+                        </li>
+                        <li class="wp-phone">
+                            <span class="phone-in">
+                                <a href="#">手机版</a>
+                                <i class="ico-mob"></i>
+                            </span>
+                            <p></p>
+                        </li>
+                        <li class="wp-service wp-business" style="width:120px;">
+                            <span class="service-in">
+                                <a href="#">Sell on vip.com</a>
+                                <i class="ico-dis"></i>
+                            </span>
+                            <p></p>
+                        </li>
+                     </ul>
+                 </div>
+             </nav>
+             <div class="head-logo">
+                 <div class="head-inner">
+                     <div class="header-logo-dop">
+                         <a href="#" title="一家专门做特卖的网站">
+                             <img src="images/home_page_r5g.png" height="78" width="266" alt="" />
+                         </a>
+                     </div>
+                     <div class="head-cart head-bag-car J_cart_ico">
+                         <div class="tool">
+                             <a href="#">
+                                 <i class="ico-arrc"></i>
+                                 <i class="ico-bag" title="查看我的购物袋"></i>
+                                 <p>购物袋
+                                 <span id="J_skuCount_container">
+                                     (<span class="nub">0</span>)
+                                 </span></p>
+                             </a>
+                         </div>
+                         <div class="tool-cn"></div>
+                     </div>
+                     <div class="header-vip">
+                         <a href="#">
+                             <img src="images/HEADERVIP1_gxf.png" height="40" width="118" alt="" />
+                         </a>
+                         <a href="#">
+                             <img src="images/HEADERVIP2_k3d.png" height="40" width="120" alt="" />
+                         </a>
+                         <a href="#">
+                             <img src="images/HEADERVIP3_wzf.png" height="40" width="119" alt="" />
+                         </a>
+                     </div>
+                 </div>
+             </div>
+             <nav class="main-nav">
+                  <div class="head-inner">
+                      <ul class="main-nav-link J_main_nav_link clearfix">
+                          <li>
+                              <a href="#">
+                                  <img src="images/HOTT_3jH.gif" height="32" width="24" alt="" />
+                                  粉色星期五
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">母婴</a>
+                          </li>
+                          <li>
+                              <a href="#">美妆</a>
+                          </li>
+                          <li>
+                              <a href="#">居家</a>
+                          </li>
+                          <li>
+                              <a href="#">男士</a>
+                          </li>
+                          <li>
+                              <a href="#">旅行</a>
+                          </li>
+                          <li>
+                              <a href="#">海外精选</a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <img src="images/HOMETOMORROW_fdU.png" height="32" width="20" alt="" />明天上线
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <img src="images/category_mlV.png" height="32" width="20" alt="" />在售分类
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav> 
+         </header>
+         <!-- banner -->
+         <div class="sp-wrapper">
+             <div class="sp-wraper-inner-sp">
+                 <div class="sp-banner sp-banner-b">
+                      <div class="sp-banner-cont">
+                          <div class="freesheep-tips"></div>
+                          <div class="sp-banner-countdown J-sp-banner-countdown">
+                              <p class="banner-cd-hd">距离活动结束还有</p>
+                              <div class="banner-cd-cont">
+                                  <span class="banner-cd-s"><input type="text" class="cd-d" value="0"></span>
+                                  <span class="banner-cd-s"><input type="text" class="cd-h" value="0"></span>
+                                  <span class="banner-cd-s"><input type="text" class="cd-m" value="0"></span>
+                                  <div class="banner-cd-s"><input type="text" class="cd-s" value="0"></div>
+                                  <div class="countdown-s"></div>
+                              </div>
+                          </div>
+                      </div>
+                 </div>
+                 <!-- 首屏轮播图 -->
+                 <div class="focus_banner">
+                    <div class="focus_banner_con">
+                        <ul>
+                            <li style="background-image:url(images/banner_1.jpg)"></li>
+                            <li style="background-image:url(images/banner_2.jpg)"></li>
+                            <li style="background-image:url(images/banner_3.jpg)"></li>
+                            <li style="background-image:url(images/banner_1.jpg)"></li>
+                            <li style="background-image:url(images/banner_2.jpg)"></li>
+                        </ul>
+                    </div>
+                    <div class="focus_banner_center">
+                       <ol>
+                           <li class="left"></li>
+                           <li class="right"></li>
+                       </ol>
+                       <p>
+                           <i class="banner_circle"></i>
+                           <i></i>
+                           <i></i>
+                           <i></i>
+                       </p>
+                    </div>
+                 </div>
+                 <div class="act_strip act_coupon_active">
+                     <div class="act_coupon">
+                         <div class="collect_box">
+                             <a href="#" class="collect_doit J_collect_doit">
+                                 <span class="in">立即领取</span>
+                             </a>
+                         </div>
+                         <a href="#" class="act_rules">活动规则></a>
+                         <div class="act_icon_sc"></div>
+                         <div class="act_icon_nc"></div>
+                         <div class="act_icon_mn"></div>
+                     </div>
+                 </div>
+                 <div style="margin:0 auto; text-align:center; width:1000px">
+                     <a href="#" style="margin-top:10px; display:inline-block;width:960px; height:200px">
+                         <img src="images/qiandao.jpg" height="135" width="960" alt="" />
+                     </a>
+                 </div>
+                 <div class="usern_wp_full">
+                     <div class="usern_container J_sp-floor">
+                         <div class="usern_head">
+                             <img src="images/floor1_v2.jpg" height="220" width="960" alt="" />
+                         </div>
+                         <div class="usern_b226_list">
+                             <!-- ajax -->
+                         </div>
+                     </div>
+                     <div class="wrap clearfix">
+                         <div class="shopyesterday J_scrollspy">
+                             <div class="shop_title">
+                                 <img src="images/tittel_08_Snq.png" alt="" />
+                             </div>
+                             <ul class="shop_yesterday clearfix">
+                                 <li class="s1_mod J_proPic_wrap">
+                                     <div class="s1_pic"><a href="#"><img src="images/37402693.jpg" alt="" /></a>
+                                     </div>
+                                     <div class="s1_info">
+                                         <span class="s1_info_discount"><span><span class="salebg2">6</span>折起</span></span>
+                                         <span class="s1_info_name" id="J_brandName_10013995">New Balance&amp;鬼冢虎复古跑鞋专场</span>
+                                         <span class="s1_info_time"><span class="s_time_icon J_wrap_pro_1449107940"><i>2天17时32分33秒</i></span></span>
+                                     </div>
+                                 </li> <li class="s1_mod J_proPic_wrap">
+                                     <div class="s1_pic"><a href="#"><img src="images/4650768.jpg" alt="" /></a>
+                                     </div>
+                                     <div class="s1_info">
+                                         <span class="s1_info_discount"><span><span class="salebg2">0.3</span>折起</span></span>
+                                         <span class="s1_info_name" id="J_brandName_10013995">家电人气品牌top榜-预热</span>
+                                         <span class="s1_info_time"><span class="s_time_icon J_wrap_pro_1449107940"><i>2天17时32分33秒</i></span></span>
+                                     </div>
+                                 </li> 
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- 广告栏 -->
+             <div class="sp-left-nav trans200 sp-left-nav-fixed fixed-0-top">
+                 <div class="sp-left-nav-top"></div>
+                 <div class="sp-left-nav-inner">
+                     <a href="#" class="sp-left-nav-outside sp-left-nav-country"></a>
+                     <a href="#" class="sp-left-nav-outside sp-left-nav-cat"></a>
+                 </div>
+             </div>
+         </div>
+         <!-- 右侧栏  -->
+         <div class="m-sidebarcom">
+             <div class="sidebarcom-nav">
+                 <div class="sidebarcom-nav-cnt">
+                     <ul class="sidebarcom-oper">
+                         <li class="sidebarcom-my">
+                             <div id="J_my">
+                                 <i class="i-sidebarcom-my"></i>
+                                 <p class="sidebarcom-hover">个人中心</p>
+                             </div>
+                         </li>
+                         <li class="sidebarcom-asset">
+                             <div id="J_asset">
+                                 <i class="i-sidebarcom-asset"></i>
+                                 <p class="sidebarcom-hover">我的优惠券</p>
+                             </div>
+                         </li>
+                         <li class="sidebarcom-brand">
+                             <div id="J_brand">
+                                 <i class="i-sidebarcom-brand"></i>
+                                 <p class="sidebarcom-hover">我收藏的品牌</p>
+                             </div>
+                         </li>
+                         <li class="sidebarcom-fav">
+                             <div id="J_fav">
+                                 <i class="i-sidebarcom-fav"></i>
+                                 <p class="sidebarcom-hover">我收藏的商品</p>
+                             </div>
+                         </li>
+                         <li class="sidebarcom-cart">
+                             <div id="J_cart">
+                             <div class="sidebarcom-cart-bar">
+                                 <i class="i-sidebarcom-cart"></i>
+                                 <p class="sidebarcom-cart-text">购物袋</p>
+                                 <i class="J_sbar_cart_count i-sidebarcom-nub">0
+                                 </i>
+                             </div>
+                             </div>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="sidebarcom-nav-ft">
+                 <div class="sidebarcom-nav-ft">
+                     <div class="sidebarcom-survey">
+                         <div id="J_sbar_survey">
+                             <a href="#">
+                                 <i class="i-sidebarcom-survey"></i>
+                             </a>
+                             <p class="sidebarcom-hover">会员反馈</p>
+                         </div>
+                     </div>
+                     <div class="sidebarcom-top">
+                         <div id="J_sbar_top">
+                             <a href="#">
+                                 <i class="i-sidebarcom-top"></i>
+                             </a>
+                             <p class="sidebarcom-hover">返回顶部</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+          <div class="jbfooter">
+            <!-- <img src="images/foot.jpg" height="480" width="1920" alt="" /> -->
+          </div>
+        <div class="footer">
+            <div class="footer-in">
+                <img src="images/footer.png" height="100" width="960" alt="" />
+                <div class="footer-in-lb">
+                   <ul>服务保障
+                     <li>正品保证</li>
+                     <li>7天无理由放心退</li>
+                     <li>退货返运费</li>
+                     <li>7x15小时客户服务</li>
+                    </ul>
+
+                   <ul>购物指南
+                     <li>导购演示</li>
+                     <li>订单操作</li>
+                     <li>会员注册</li>
+                     <li>账户管理</li>
+                     <li>收货样品</li>
+                     <li>会员等级</li>
+
+                   </ul>
+                   <ul>支付方式
+                     <li>23家主流网银支付</li>
+                     <li>货到付款</li>
+                     <li>支付宝、银联等支付</li>
+                     <li>信用卡支付</li>
+                     <li>唯品钱包支付</li>
+                   </ul>   
+
+                   <ul>配送方式
+                     <li>全场满288元免运费</li>
+                     <li>配送范围及运费</li>
+                     <li>验货与签收</li>
+
+                   </ul>
+                   <ul>售后服务
+                     <li>退货政策</li>
+                     <li>货到付款</li>
+                     <li>退货流程</li>
+                     <li>退款方式和时效</li>
+                   </ul> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

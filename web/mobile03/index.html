@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- 视口标签 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <!-- 删除苹果默认的工具栏和菜单栏 -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- 设置苹果工具栏颜色 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+        <meta name="format-detection" content="telphone=no, email=no" />
+        <!-- 启用360浏览器的极速模式(webkit) -->
+        <meta name="renderer" content="webkit">
+        <!-- 避免IE使用兼容模式 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+        <meta name="HandheldFriendly" content="true">
+        <!-- 微软的老式浏览器 -->
+        <meta name="MobileOptimized" content="320">
+        <!-- uc强制竖屏 -->
+        <meta name="screen-orientation" content="portrait">
+        <!-- QQ强制竖屏 -->
+        <meta name="x5-orientation" content="portrait">
+        <!-- UC强制全屏 -->
+        <meta name="full-screen" content="yes">
+        <!-- QQ强制全屏 -->
+        <meta name="x5-fullscreen" content="true">
+        <!-- UC应用模式 -->
+        <meta name="browsermode" content="application">
+        <!-- QQ应用模式 -->
+        <meta name="x5-page-mode" content="app">
+        <!-- windows phone 点击无高光 -->
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- 适应移动端end -->
+        <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/zepto.min.js"></script>
+        <!-- <script type="text/javascript" src="js/touch.js"></script> -->
+        <script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+        <script type="text/javascript" src="js/base.js"></script>
+        <script type="text/javascript" src="js/time.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    </head>
+    <body>
+        <section class="wrap">
+            <!-- <div class="all"> -->
+                <div class="page1">
+                    <header class="header">
+                        <div class="header-logo">
+                            <h1>
+                                <a href="#" class="ico">一元夺宝
+                                    
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="header-toolbar">
+                            <a href="#" class="search"><i class="ico"></i></a>
+                            <a href="#" class="userpage"><i class="ico"></i></a>
+                        </div>
+                    </header>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#" class="current"><span>首页</span></a></li>
+                            <li><a href="#"><span>全部商品</span></a></li>
+                            <li><a href="#"><span>晒单</span></a></li>
+                        </ul>
+                    </nav>
+                        <!-- 本例主要代码 Start ================================ -->
+        <div id="focus" class="focus">
+            <div class="hd">
+                <ul></ul>
+            </div>
+            <div class="bd">
+                <ul>
+                        <li><a href="#"><img src="pictures/33445a28156bfd7854de1ee5e4739521.jpg" /></a></li>
+                        <li><a href="#"><img src="pictures/5dc3aa087ef0c7c0fe2452255d21a833.jpg"/></a></li>
+                        <li><a href="#"><img src="pictures/73cb9441e7df568a8bb2327ed8ff2ba6.jpg" /></a></li>
+                        <li><a href="#"><img src="pictures/9c490f011a5cc4198a706cb6908356c2.jpg" /></a></li>
+                        <!-- <li><a href="#"><img src="pictures/f7bccb2673a1970908b36ab3573016e4.jpg"  /></a></li> -->
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            TouchSlide({ 
+                slideCell:"#focus",
+                titCell:".hd ul",   //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell:".bd ul", 
+                effect:"leftLoop", 
+                autoPlay:true,//自动播放
+                autoPage:true //自动分页
+            });
+        </script> 
+        <!-- 本例主要代码 End ================================ -->
+        <div class="new-know">
+            <h3>最新揭晓</h3>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/bao.png" width="70" ></a>
+                    <div class="daojishi">
+                        <span class="time-l">倒计时</span>
+                        <div role="times" class="snatch-time" data-time="650000">
+                            <span></span>:
+                            <span></span>:
+                            <span></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="images/jian.png" width="70" ></a>
+                    <div class="daojishi">
+                        <span class="time-l">倒计时</span>
+                        <div role="times" class="snatch-time" data-time="650000">
+                            <span></span>:
+                            <span></span>:
+                            <span></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="images/jiu.png" width="70" ></a>
+                    <div class="daojishi">
+                        <span class="time-l">倒计时</span>
+                        <div role="times" class="snatch-time" data-time="650000">
+                            <span></span>:
+                            <span></span>:
+                            <span></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="new-shop">
+            <h3>上价新品
+            <a href="#">更多</a></h3>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/newshop1.jpg" width="70" ></a>
+                    <p><a href="#" class="text">海购商品 Swatch 石英表 夜行速度</a></p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/newshop2.jpg" width="70" ></a>
+                    <p><a href="#" class="text">海购商品 Swatch 中性双日历腕表</a></p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/newshop3.jpg" width="70"></a>
+                    <p><a href="#" class="text">海购商品 Swatch 斯沃琪 中性石英</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="hot-shop">
+            <h3>今日热门商品
+            <a href="#">更多</a></h3>
+            <div class="container">
+                <ul class="hotwrap clearfix">
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/6plus.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    Apple iPhone6s Plus 64G 颜色随机
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <i class="ico ico-ten"></i> -->
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/watch.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    Apple Watch 42毫米不锈钢表壳搭配运动型表带锈钢表壳搭配运动型表带
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/apple.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">The new Macbook 12英寸 标配 256G闪存</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/ipad.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">iPad Pro 128G WIFI版</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                       <!--  <i class="ico ico-ten"></i> -->
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/yuanbao.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">中国黄金 9999投资金元宝 100g</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/coach.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">Coach 蔻驰 压花织纹皮革KYLIE斜挎包</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/cors.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">MICHAEL KORS 迈克高仕 Glam 戒指</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/huang.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">Apple iPhone6s Plus 64G 颜色随机</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/plus.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">Apple iPhone6s Plus 64G 颜色随机</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/6plus.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">Apple iPhone6s Plus 64G 颜色随机</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/iphone6.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">Apple iPhone6s Plus 64G 颜色随机</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/6s.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">Apple iPhone6s Plus 64G 颜色随机</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/huang.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">Apple iPhone6s Plus 64G 颜色随机</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/iphone6.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">Apple iPhone6s Plus 64G 颜色随机</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/6plus.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">Apple iPhone6s Plus 64G 颜色随机</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ico ico-ten"></i>
+                        <div class="goods">
+                            <div class="goods-pic">
+                                <a href="#">
+                                    <img src="images/6plus.png" height="150" width="200">
+                                </a>
+                            </div>
+                            <div class="goods-info">
+                                <p>
+                                    <a href="#">Apple iPhone6s Plus 64G 颜色随机</a>
+                                </p>
+                                <div class="progressbar">
+                                    <p>开奖进度<strong>93%</strong></p>
+                                    <p class="bar">
+                                        <span class="bar-width">
+                                            <i class="color"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="goods-btn">
+                                <button class="goods-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="more">
+            <a href="#">点击查看更多商品</a>
+        </div>
+        <div class="footer">
+            <p class="special">特别说明：苹果公司不是一元夺宝赞助商，并且苹果公司也不会以任何形式参与其中！</p>
+            <ul class="protect clearfix">
+                <li><i class="ico ico-state1 ico-state"></i>公平公正公开</li>
+                <li><i class="ico ico-state2 ico-state"></i>正品保证</li>
+                <li><i class="ico ico-state3 ico-state"></i>权益保障</li>
+            </ul>
+            <p class="what">
+                <a href="#">什么是一元夺宝？</a>
+                <a href="#" class="load">下载APP</a>
+            </p>
+            <p class="copyright">ICP证浙B2-20090185 <span>网易公司版权所有 © 1997-2015</span></p>
+        </div>
+
+                </div>
+                <!-- <div class="page2"></div>
+                <div class="page3"></div>
+                <div class="page4"></div>
+                <div class="page5"></div>
+                <div class="page6"></div> -->
+            <!-- </div> -->
+        </section>
+    </body>
+</html>
